@@ -66,7 +66,7 @@ jobs:
       - name: Upload release asset
         uses: svenstaro/upload-release-action@v2
         with:
-          repo_token: ${{ secrets.CYM_TOKEN }}
+          repo_token: ${{ secrets.AUTO_TOKEN }}
           tag: ${{env.strDate}}
           file_glob: true
           overwrite: true
